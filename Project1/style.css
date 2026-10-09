@@ -1,0 +1,157 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #efeae2;
+    color: #111b21;
+    line-height: 1.6;
+}
+
+/* Header*/
+header {
+    background-color: #075e54;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+
+/* Navigation */
+nav {
+    background-color: #128c7e;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d9fdd3;
+}
+
+/* Main Content */
+main {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #25d366;
+}
+
+.card h2 {
+    color: #075e54;
+    margin-bottom: 12px;
+}
+
+.card p {
+    margin-bottom: 18px;
+}
+
+/* Image */
+.hero-image {
+    display: block;
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Links */
+.card a {
+    color: #128c7e;
+    font-weight: bold;
+}
+
+.card a:hover {
+    color: #075e54;
+}
+
+
+button {
+    background-color: #25d366;
+    color: #075e54;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Keyboard Accessibility */
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #075e54;
+    outline-offset: 3px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #075e54;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+}

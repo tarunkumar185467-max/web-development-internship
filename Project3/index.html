@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="header-content">
+
+            <h1>Quiz Hub</h1>
+
+            <p>
+                Interactive Quiz & Daily Joke
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+
+        <a href="#quiz">Quiz</a>
+
+        <a href="#joke">Daily Joke</a>
+
+        <a href="#about">About</a>
+
+    </nav>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <div class="container">
+
+
+            <!-- ================= QUIZ ================= -->
+
+            <section id="quiz" class="card">
+
+                <h2>🧠 Web Development Quiz</h2>
+
+                <p class="description">
+                    Test your basic knowledge of HTML,
+                    CSS and JavaScript.
+                </p>
+
+
+                <!-- Question -->
+
+                <div id="question-container">
+
+                    <p id="question">
+                        Question will appear here
+                    </p>
+
+
+                    <!-- Options -->
+
+                    <div id="options">
+
+                        <button class="option">
+                            Option 1
+                        </button>
+
+                        <button class="option">
+                            Option 2
+                        </button>
+
+                        <button class="option">
+                            Option 3
+                        </button>
+
+                        <button class="option">
+                            Option 4
+                        </button>
+
+                    </div>
+
+
+                    <!-- Quiz Controls -->
+
+                    <div class="quiz-controls">
+
+                        <span id="questionNumber">
+                            Question 1 / 5
+                        </span>
+
+                        <button id="nextBtn">
+                            Next
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Result -->
+
+                <div id="result" class="result">
+
+                    <h3>Quiz Completed!</h3>
+
+                    <p id="score"></p>
+
+                    <button id="restartBtn">
+                        Restart Quiz
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= API SECTION ================= -->
+
+            <section id="joke" class="card">
+
+                <h2>😂 Daily Joke</h2>
+
+                <p class="description">
+                    Fetch a random joke from a public API.
+                </p>
+
+
+                <div class="joke-box">
+
+                    <p id="jokeText">
+                        Click the button to get a joke.
+                    </p>
+
+                </div>
+
+
+                <button id="jokeBtn">
+                    Get New Joke
+                </button>
+
+            </section>
+
+
+
+            <!-- ================= ABOUT ================= -->
+
+            <section id="about" class="card">
+
+                <h2>About This Project</h2>
+
+                <p>
+                    This task demonstrates responsive
+                    web design, JavaScript interaction,
+                    DOM manipulation and API integration.
+                </p>
+
+                <div class="features">
+
+                    <div class="feature">
+                        <h3>📱 Responsive</h3>
+                        <p>
+                            Works on mobile, tablet
+                            and desktop.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <h3>🧠 JavaScript</h3>
+                        <p>
+                            Interactive quiz with
+                            score calculation.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <h3>🌐 API</h3>
+                        <p>
+                            Fetches live data from
+                            an external API.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Quiz Hub |
+            Internship Task 3
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
